@@ -5,6 +5,11 @@ html, body{
     margin: 0;
 }
 
+/* indexView.php */
+#header{
+    width: 100%;
+}
+
 .room{
     display: grid;
 

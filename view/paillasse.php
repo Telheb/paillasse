@@ -1,4 +1,7 @@
-<body>
+<?php $title = "Index"; ?>
+
+<?php ob_start(); ?>
+
     <div class="room">
 
         <!-- block elements -->
@@ -50,5 +53,5 @@
 
     </div>
     
-</body>
-</html>
+<?php $content = ob_get_clean(); ?>
+<?php require "template.php"; ?>
