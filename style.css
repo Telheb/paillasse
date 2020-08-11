@@ -1,0 +1,131 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.room{
+    display: grid;
+
+    grid-template-columns: 0.5fr 0.5fr 2fr 3fr 2fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 3fr 2fr;
+
+    grid-template-areas:
+    "tool1 tool2 armoire1 hote armoire2 element1 element2"
+    "tool3 tool4 armoire1 hote armoire2 element3 element4"
+    "tool5 tool6 armoire1 hote armoire2 element5 element6"
+    "vide2 vide2 vide1 vide1 vide1 vide3 vide3"
+    "vide2 vide2 paillasse paillasse paillasse vide3 vide3"
+    "vide2 vide2 armoire3 trash armoire4 vide3 vide3"
+    ;
+
+    background-image: url("imgPaillasse.png");
+    background-size: 100% 100%;
+
+    /*  option à enlever */
+    width: 100%;
+    height: 100%;
+}
+
+/* mes éléments */
+#e1, #e2, #e3, #e4, #e5, #e6{
+    /* background-color: #000; */
+    border: 1px solid #fff;
+}
+
+#e1{
+    grid-area: element1;
+}
+#e2{
+    grid-area: element2;
+}
+#e3{
+    grid-area: element3;
+}
+#e4{
+    grid-area: element4;
+}
+#e5{
+    grid-area: element5;
+}
+#e6{
+    grid-area: element6;
+}
+
+/* mes outils */
+#o1, #o2, #o3, #o4, #o5, #o6{
+    /* background-color: brown; */
+}
+
+#o1{
+    grid-area: tool1;
+}
+#o2{
+    grid-area: tool2;
+}
+#o3{
+    grid-area: tool3;
+}
+#o4{
+    grid-area: tool4;
+}
+#o5{
+    grid-area: tool5;
+}
+#o6{
+    grid-area: tool6;
+}
+
+/* les armoires */
+
+#a1, #a2, #a3, #a4{
+    /* background-color: cadetblue; */
+}
+
+#a1{
+    grid-area: armoire1;
+}
+#a2{
+    grid-area: armoire2;
+}
+#a3{
+    grid-area: armoire3;
+}
+#a4{
+    grid-area: armoire4;
+}
+
+/* la hôte */
+.hote{
+    grid-area: hote;
+    /* background-color: coral; */
+}
+
+/* les espaces vides */
+#es1, #es2, #es3{
+    /* background-color: #fff; */
+}
+
+#es1{
+    grid-area: vide1;
+}
+#es2{
+    grid-area: vide2;
+}
+#es3{
+    grid-area: vide3;
+}
+
+/* les poubelles */
+.trash{
+    /* background-color: crimson; */
+    grid-area: trash;
+}
+
+/* la paillasse */
+.paillasse{
+    /* background-color: darkblue; */
+    grid-area: paillasse;
+}
+
