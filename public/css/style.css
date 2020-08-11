@@ -1,0 +1,149 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.room{
+    display: grid;
+
+    grid-template-columns: 0.5fr 1.5fr 0.3fr 0.5fr 0.8fr 1.1fr 0.9fr 0.5fr 0.3fr 1.5fr 0.5fr;
+    grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1fr 3fr;
+
+    grid-template-areas:
+        "element1 armoire1 armoire1 armoire1 hote hote hote armoire2 armoire2 armoire2 tool1"
+        "element2 armoire1 armoire1 armoire1 hote hote hote armoire2 armoire2 armoire2 tool2"
+        "element3 armoire1  armoire1 armoire1 hote hote hote armoire2 armoire2 armoire2 tool3"
+        "element4 vide1 vide1 vide1 vide1 vide1 vide1 vide1 vide1 vide1 tool4"
+    
+        "element5 paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse tool5"
+        "vide2 paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse vide5"
+        "vide2 armoire3 vide3 trash1 trash1 trash2 trash3 trash3 vide4 armoire4 vide5"
+    ;
+
+    background-image: url("../pictures/paillasse.png");
+    background-size: 100% 100%;
+
+    /*  option à enlever */
+    width: 100%;
+    height: 100%;
+}
+
+/* mes éléments */
+#e1, #e2, #e3, #e4, #e5{
+    /* background-color: #000; */
+    border: 1px solid #000;
+}
+
+#e1{
+    grid-area: element1;
+}
+#e2{
+    grid-area: element2;
+}
+#e3{
+    grid-area: element3;
+}
+#e4{
+    grid-area: element4;
+}
+#e5{
+    grid-area: element5;
+}
+
+
+/* mes outils */
+#o1, #o2, #o3, #o4, #o5{
+    border: 1px solid #000;
+}
+
+#o1{
+    grid-area: tool1;
+}
+#o2{
+    grid-area: tool2;
+}
+#o3{
+    grid-area: tool3;
+}
+#o4{
+    grid-area: tool4;
+}
+#o5{
+    grid-area: tool5;
+}
+
+
+/* les armoires */
+
+#a1, #a2, #a3, #a4{
+    /* background-color: cadetblue; */
+    border: 1px solid #000;
+}
+
+#a1{
+    grid-area: armoire1;
+}
+#a2{
+    grid-area: armoire2;
+}
+#a3{
+    grid-area: armoire3;
+}
+#a4{
+    grid-area: armoire4;
+}
+
+/* la hôte */
+.hote{
+    grid-area: hote;
+    /* background-color: coral; */
+    border: 1px solid #000;
+}
+
+/* les espaces vides */
+#es1, #es2, #es3{
+    /* background-color: #fff; */
+    border: 1px solid #000;
+}
+
+#es1{
+    grid-area: vide1;
+}
+#es2{
+    grid-area: vide2;
+}
+#es3{
+    grid-area: vide3;
+}
+#es4{
+    grid-area: vide4;
+}
+#es5{
+    grid-area: vide5;
+}
+
+/* les poubelles */
+.trash{
+    /* background-color: crimson; */
+    grid-area: trash;
+    border: 1px solid #000;
+}
+#t1{
+    grid-area: trash1;
+}
+#t2{
+    grid-area: trash2;
+}
+#t3{
+    grid-area: trash3;
+}
+
+/* la paillasse */
+.paillasse{
+    /* background-color: darkblue; */
+    grid-area: paillasse;
+    border: 1px solid #000;
+}
+
