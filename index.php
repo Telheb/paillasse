@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- faire de l'index le routeur pour la suite du projet -->
+
     <div class="room">
 
         <!-- block elements -->
