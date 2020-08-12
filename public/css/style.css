@@ -6,10 +6,23 @@ html, body{
 }
 
 /* indexView.php */
+
+#nav{
+    height: 30%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+
 #header{
     width: 100%;
 }
 
+
+
+
+/* paillasse */
 .room{
     display: grid;
 

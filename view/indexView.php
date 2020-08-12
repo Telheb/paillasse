@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<nav>
+<nav id="nav">
      <!-- I need navBar file require include  -->
     <img src="public/pictures/header.png" id="header" alt="">       
 </nav>
