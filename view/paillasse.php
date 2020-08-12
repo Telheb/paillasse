@@ -1,4 +1,4 @@
-<?php $title = "Index"; ?>
+<?php $title = "paillasse"; ?>
 
 <?php ob_start(); ?>
 

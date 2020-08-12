@@ -6,26 +6,106 @@ html, body{
 }
 
 /* indexView.php */
-
-#nav{
+nav{
     height: 30%;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #000;
 }
-
+section{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    width: 99%;
+    height: 99%;
+    padding: 0;
+    border: 1px solid #41046f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: content-box;
+    margin: 10px;
+    border-radius: 20px;
+}
+li{
+    width: 42.5%;
+    height: 45%;
+    list-style-type: none;
+    border-radius: 30px;
+    border: 1px solid #41046f;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#presentation{
+    width: 87.5%;
+    height: 40%;
+    border: 1px solid #41046f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+   width: 35%; 
+}
+p{
+    width: 100%;
+    height: 15%;
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #41046f;
+}
+#citation{
+    border: none;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
 
 #header{
     width: 100%;
+    height: 100%;
+}
+.info{
+    width: 65%;
+    height: 70%;
+    border: none;
+    padding: 30px;
+    text-align: justify;
+}
+.btn-a{
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+    height: 10%;
+}
+.preparer{
+    width: 16%;
+    height: 90%;
+    border: 1px solid #000;
 }
 
-
-
+.p1{
+    height: 66%;
+    background-color: aqua;
+    width: 80%;
+    margin-left: 190px;
+    margin-top: 100px;
+    margin-right: 0px;
+}
 
 /* paillasse */
 .room{
     display: grid;
 
+    /* test en pourcentage */
     grid-template-columns: 0.5fr 1.5fr 0.3fr 0.5fr 0.8fr 1.1fr 0.9fr 0.5fr 0.3fr 1.5fr 0.5fr;
     grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1fr 3fr;
 
@@ -34,7 +114,6 @@ html, body{
         "element2 armoire1 armoire1 armoire1 hote hote hote armoire2 armoire2 armoire2 tool2"
         "element3 armoire1  armoire1 armoire1 hote hote hote armoire2 armoire2 armoire2 tool3"
         "element4 vide1 vide1 vide1 vide1 vide1 vide1 vide1 vide1 vide1 tool4"
-    
         "element5 paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse tool5"
         "vide2 paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse paillasse vide5"
         "vide2 armoire3 vide3 trash1 trash1 trash2 trash3 trash3 vide4 armoire4 vide5"
@@ -160,8 +239,62 @@ html, body{
 
 /* la paillasse */
 .paillasse{
-    /* background-color: darkblue; */
     grid-area: paillasse;
     border: 1px solid #000;
+}
+
+
+/* reac */
+
+.tableau {
+    background-image: url("img/tableau.jpg");
+    background-size: cover;
+    width: 310px;
+    height: 250px;
+    color: white;
+    font-family: 'Dancing Script';
+    margin-right: 100px;
+}
+
+h3 {
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.note {
+    background-image: url("img/carnet.png");
+    width: 300px;
+    height: 400px;
+    font-family: 'Dancing Script';
+}
+
+p {
+    margin-left: 80px;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.f {
+    text-decoration: line-through;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #818383;
+}
+
+.bloc {
+    margin-top: 103px;
+}
+
+.drag-drop {
+    width: 200px;
+    height: 100px;
+    /* border: 2px solid #8181F7;
+    background: #BDBDBD; */
+    padding: 10px;
 }
 
