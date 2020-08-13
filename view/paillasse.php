@@ -21,7 +21,7 @@
 
 
         <!-- armoire des éléments -->
-        <div class="armoire_1" id="a1"></div>
+        <a  class="armoire_1" id="a1"></a>
 
         <!-- hote -->
         <div class="hote"></div>
