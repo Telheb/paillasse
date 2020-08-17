@@ -1,3 +1,6 @@
+// function pour le aside
+
+
 //  class qui crée un élément pour les armoires
 class CreateElement{
     constructor(element, parent, attributType, nomAttribut){

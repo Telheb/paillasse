@@ -10,7 +10,7 @@
 <section>
         <ul>
             <!-- <li>
-
+h2
                     <p>Préparer vos équation</p>
                     <img src="http://prepajeanbart.free.fr/images/chimie.gif" alt="">
                     <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id quidem iste architecto natus, reiciendis corporis minima, eos nostrum aperiam, aspernatur explicabo hic. Reiciendis aspernatur, dolores rem earum in maiores!</p>                    
@@ -27,19 +27,25 @@
                         </div>
                 </li> -->
 
-                <li>
-                    <p>Préparer vos équation</p>
-                    <img src="http://prepajeanbart.free.fr/images/chimie.gif" alt="">
-                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id quidem iste architecto natus, reiciendis corporis minima, eos nostrum aperiam, aspernatur explicabo hic. Reiciendis aspernatur, dolores rem earum in maiores!</p>
+                <li class="liIndexView">
+                <h2>Préparer vos équation</h2>
+                    <div class="textNimgIndex">
+                        <img src="http://prepajeanbart.free.fr/images/chimie.gif" alt="">
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id quidem iste architecto natus, reiciendis corporis minima, eos nostrum aperiam, aspernatur explicabo hic. Reiciendis aspernatur, dolores rem earum in maiores!</p>
+                    </div>
+                 
                     <button><a href="index.php?action=reac">Dilution</a></button>     
                     <button><a href="index.php?action=dis">Disolution</a></button>     
                     <button><a href="index.php?action=pre">Précipitation</a></button>     
                 </li>
 
-                <li>
-                <p>Acceder à la paillasse</p>
-                    <img src="img/imgPaillasse" alt="">
-                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id quidem iste architecto natus, reiciendis corporis minima, eos nostrum aperiam, aspernatur explicabo hic. Reiciendis aspernatur, dolores rem earum in maiores!</p>
+                <li class="liIndexView">
+                <h2>Acceder à la paillasse</h2>
+                    <div class="textNimgIndex">
+                        <img id="imgPaillasse" src="public/pictures/paillasse" alt="">
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore id quidem iste architecto natus, reiciendis corporis minima, eos nostrum aperiam, aspernatur explicabo hic. Reiciendis aspernatur, dolores rem earum in maiores!</p>
+                    </div>
+                   
                     <div class="btn-a">
                     <button><a href="index.php?action=paillasse">Acceder</a></button>         
                 </li>

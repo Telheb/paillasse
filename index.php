@@ -2,7 +2,7 @@
 
     require "controller/controller.php";
 
-var_dump($_GET['action']);
+// var_dump($_GET['action']);
 
 
     if(isset($_GET)){
