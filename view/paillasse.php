@@ -21,13 +21,13 @@
 
 
         <!-- armoire des éléments -->
-        <a  class="armoire_1" id="a1"></a>
+        <a href="model/req.php?action=a1" class="armoire" id="a1"></a>
 
         <!-- hote -->
         <div class="hote"></div>
 
         <!-- armoire des tools -->
-        <div class="armoire_2" id="a2"></div>
+        <a class="armoire" id="a2"></a>
 
         <!-- empty espaces -->
         <div class="emptyspace" id="es1"></div>
