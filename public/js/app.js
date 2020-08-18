@@ -108,6 +108,16 @@ function ajax(type, selecteur, lien){
 ajax("#", "a1", "href");
 
 
+
+
+
+/* Ahmed Warning
+    Voici deux function fait un peu à la va vite.
+    Elle marche mais je pense que tu as mieux
+    Si jamais tu veux les reprendre en plus j'ai un
+    overflow de merde.
+    Il est 23.06. Je commence à tomber
+*/    
 function openCasier(){
     const a2 = document.querySelector("#a2");
     console.log(a2)
