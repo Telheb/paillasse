@@ -1,46 +1,34 @@
-// function pour le aside
-
-
 //  class qui crée un élément pour les armoires
-class CreateElement{
-    constructor(element, parent, attributType, nomAttribut){
+// @element => type de balise html
+// @parent => élément parent 
+// @attributType => le type d'attribut (class ou id)
+// @nomAttribut => le nom de l'attribut
+class CreateArmoire{
+    constructor(element, attributType, nomAttribut){
         this.element = element;
-        this.parent = parent;
         this.attributType = attributType;
         this.nomAttribut = nomAttribut;
     }
-     create(){
+     create(parent){
         const modal = document.createElement(this.element);
         modal.setAttribute(this.attributType, this.nomAttribut);
-        this.parent.append(modal);         
+        const lien = document.querySelector(parent)
+        lien.appendChild(modal);         
      }
 }
 
-class  ArmoiresForm extends CreateElement{
-    constructor(){
-
-     super(element, parent, attributType, nomAttribut);
+class CreateForm{
+    constructor(element, attributType, nomAttribut){
+        this.element = element;
+        this.attributType = attributType;
+        this.nomAttribut = nomAttribut;
     }
-}
-
-
-
-// mon fonction crée element va permettre sur l'action d'un clic de crée mon objet.
-
-function createElement(cible, variable, type, attribut, name){
-
-    // cible element parent
-    const action = document.querySelector(cible);
-    variable = new CreateElement(type, action, attribut, name);
-
-    action.addEventListener('click', function(e){
-        const info = document.querySelector("." + variable.nomAttribut);
-        // e.preventDefault();
-        if(info == null){  
-            variable.create();
-        }
-
-    })
+     create(parent){
+        const modal = document.createElement(this.element);
+        modal.setAttribute(this.attributType, this.nomAttribut);
+        const lien = document.querySelector(parent)
+        lien.appendChild(modal);         
+     }
 }
 
 
@@ -48,83 +36,64 @@ function createElement(cible, variable, type, attribut, name){
 
 
 
-
+// function ajax : 
+// @type => class ou id
+// @selecteur => le nom de l'attribut que je cible lors du click
+// @variable => cible lors du clic pour lancer la function
+// @typeAttribute => le lien pour envoyer la req Ajax
 
 const reqAjax = new XMLHttpRequest();
 
+function ajax(type, selecteur, lien){
 
-
-// je selection tout mes armoires
-var links = document.querySelectorAll('.armoire');
-console.log(links);
-
-// une boucle pour selectionner mes liens
-for(var i = 0; i<links.length; i++){
-    var link = links[i];
-    
-    // quand je clique sur le lien
- document.addEventListener('click', function(e){
-    console.log(charger)
-    
+    const go = document.querySelector(type + selecteur);
+    go.addEventListener('click', function(e){
         e.preventDefault();
-
+        reqAjax;
         reqAjax.onreadystatechange = function(){
-            // quand ma req arrive à 4
-            if(reqAjax.readyState === 4){
-                if(reqAjax.status === 200){
-                    createElement("#a1", "armoire", "div", "class", "elementOutil");
+            if(reqAjax.readyState === 4 && reqAjax.status === 200){
+                // mon instruction
+
+                // je récupère tous les résultats
+                const results = JSON.parse(reqAjax.responseText);
+                console.log(results)
 
 
 
 
-                     }
-                  }
+                    const armoireGauche = new CreateArmoire("div", "class", "elementOutil");
+                    armoireGauche.create("#a1");
+
+
+                    const form = new CreateForm("form", "class", "formOutil")
+                    form.create(".elementOutil")
+
+                    for(var i = 0; i < results.length; i++){
+                        const input = document.createElement('input');
+                        input.setAttribute("class", "input")
+                        input.setAttribute("name", results[i].nom_outil)
+                        input.innerHTML = results[i].nom_outil;
+                        const target = document.querySelector(".formOutil")
+                        target.append(input)
+                        console.log(input)
+                    }
+
+
+
+
             }
-        
-        reqAjax.open('GET', this.getAttribute('href'), true);
-        reqAjax.send();
+        }
+            // Attention à l'envoi spécifié le type
+            reqAjax.open('GET', this.getAttribute(lien), true);
+            reqAjax.send();
     })
 }
 
+ajax("#", "a1", "href");
 
-// 
+// http://localhost/pv_project/model/req.php?action=a1
 
 
-
-                    // je crée mon objet.
-
-                    // je lui assign ma reponse du serveur pour chaque élément
-                    // const reponses = JSON.parse(reqAjax.responseText);
-                    // reponses.innerHTML = "";
-
-                    // for(var i = 0; i < reponses.length; i++){
-                    //     var div = new ArmoiresForm("div", "elementUtilitaire", "class", "formElement");
-                    //     div.create()
-                    //     div.innerHTML = reponses[i].nom_outil;
-                    // }
-
-                    
-                    // console.log(reponses)
-                    // reponses.innerHTML = '';
-
-                    // var a1 = document.querySelector("#a1");
-                    // console.log(a1)
-                    // for(var i = 0; i < reponses.length; i++){
-
-                    //     var div = document.createElement('div');
-
-                    //     div.innerHTML = reponses[i].nom_outil;
-                    //     a1.appendChild(div);
-                // }
-                    
-                // var ul = document.createElement('ul');
-                // ul.appendChild(link)
-                // reponse.append(ul);
-                
-                // for(var i = 0; i < reponse.length; i++){
-                //     var li = document.createElement('li')
-                //     li.innerHTML = reponse[i].nom_outil;
-                //     ul.appendChild(li);
 
 
 

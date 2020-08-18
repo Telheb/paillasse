@@ -4,9 +4,9 @@
 
     <div class="room">
 
-        <aside>
+        <aside id="casier">
             <div id="contentTool"></div>
-            <div id="buttonLeft">clic here to open</div>
+            <button id="buttonLeft">clic here to open</button>
         </aside>
 
         <!-- block elements -->
