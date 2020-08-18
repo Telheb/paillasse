@@ -29,12 +29,8 @@ class CreateForm{
         const lien = document.querySelector(parent)
         lien.appendChild(modal);         
      }
+
 }
-
-
-
-
-
 
 // function ajax : 
 // @type => class ou id
@@ -59,28 +55,22 @@ function ajax(type, selecteur, lien){
                 console.log(results)
 
 
-
-
                     const armoireGauche = new CreateArmoire("div", "class", "elementOutil");
                     armoireGauche.create("#a1");
 
 
-                    const form = new CreateForm("form", "class", "formOutil")
-                    form.create(".elementOutil")
+                    const form = new CreateForm("form", "class", "formOutil");
+                    form.create(".elementOutil");
 
                     for(var i = 0; i < results.length; i++){
-                        const input = document.createElement('input');
-                        input.setAttribute("class", "input")
-                        input.setAttribute("name", results[i].nom_outil)
+                        const input = document.createElement('div');
+                        input.setAttribute("class", "input");
+                        input.setAttribute("name", results[i].nom_outil);
                         input.innerHTML = results[i].nom_outil;
-                        const target = document.querySelector(".formOutil")
-                        target.append(input)
-                        console.log(input)
+                        const target = document.querySelector(".formOutil");
+                        target.append(input);
+                        // console.log(input);
                     }
-
-
-
-
             }
         }
             // Attention à l'envoi spécifié le type
@@ -91,7 +81,7 @@ function ajax(type, selecteur, lien){
 
 ajax("#", "a1", "href");
 
-// http://localhost/pv_project/model/req.php?action=a1
+
 
 
 

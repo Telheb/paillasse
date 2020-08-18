@@ -329,8 +329,8 @@ aside{
     height: 30%;
     background-color: yellow;
     color: white;
-    font-size: 36px;
-    border: 1px solid #000;
+    font-size: 21px;
+    /* border: 1px solid #000; */
 }
 /* .elementUtilitaire{
     width: 100%;
