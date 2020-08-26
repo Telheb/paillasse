@@ -4,10 +4,15 @@
 
     <div class="room">
 
-        <aside id="casier" class="has-close">
-        <button id="buttonLeft">clic here to open</button>
-            <div id="contentTool"></div>
+        <aside id="element" class="has-closeLeft">
+            <div id="contentElement"></div>
+            <button id="buttonLeft">clic here to open</button>
         </aside>
+
+        <!-- <aside id="outil" class="has-closeRight">
+        <button id="buttonRight">clic here to open</button>
+            <div id="contentTool"></div>
+        </aside> -->
 
         <!-- block elements -->
         <!-- <div class="element" id="e1"></div>

@@ -1,7 +1,40 @@
-// Mes class servent à créer les éléments que l'on as besoin.
-// Il est possible de changer les méthodes pour une meilleur utilisation.
-// CreateArmoire va surtout créer les armoires du haut, cette class peut être extend pour factoriser le code
-// et pour créer des éléments autre ayant les mêmes propriétés.
+// function pour ouvrir les menus déroulants.
+function test(action, cible, a){
+
+    const button = document.querySelector(action)
+    button.addEventListener('click', function(e){
+        e.preventDefault()
+        const div = document.querySelector(cible)
+        const result = div.getAttribute('class')
+    
+        if(result == "has-closeLeft"){
+            anchor = true
+        } else if (result == "has-openLeft"){
+            anchor = false
+        } if(anchor){ 
+            open()
+        } else{
+            close()
+        }
+    })
+
+
+    function open(){
+            const div = document.querySelector('#element')
+            div.removeAttribute('class')
+            div.setAttribute('class', 'has-openLeft')
+    }
+
+    function close(){
+            const div = document.querySelector('#element')
+            div.removeAttribute('class')
+            div.setAttribute('class', 'has-closeLeft')
+    }
+}    
+
+test('#buttonLeft', '#element')
+
+
 
 
 
@@ -106,44 +139,6 @@ function ajax(type, selecteur, lien){
 // peut être une structure de contrôle pour servir de rooter vers l'appel ou function nécessaire à l'utilisateur
 // pendant ses expériences.
 ajax("#", "a1", "href");
-
-
-
-
-
-/* Ahmed Warning
-    Voici deux function fait un peu à la va vite.
-    Elle marche mais je pense que tu as mieux
-    Si jamais tu veux les reprendre en plus j'ai un
-    overflow de merde.
-    Il est 23.06. Je commence à tomber
-*/    
-function openCasier(){
-    const a2 = document.querySelector("#a2");
-    console.log(a2)
-    a2.addEventListener("click", function(e){
-        console.log("hello")
-        e.preventDefault();
-        const armoire3 = document.querySelector("#casier");
-        armoire3.setAttribute("class", "has-open");
-    })
-}
-
-function closeCasier(){
-    const buttonLeft = document.querySelector("#buttonLeft");
-    console.log(buttonLeft);
-    buttonLeft.addEventListener("click", function(e){
-        console.log("hello")
-        e.preventDefault();
-        const armoire3 = document.querySelector("#casier");
-        armoire3.removeAttribute(".has-open")
-        armoire3.setAttribute("class", "has-close");
-    })
-}
-
-openCasier()
-closeCasier()
-
 
 
 

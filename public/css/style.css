@@ -3,7 +3,10 @@ html, body{
     width: 100%;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+
 }
+
 
 /* indexView.php */
 nav{
@@ -191,10 +194,20 @@ p{
 
 
 /* les armoires */
+#element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
 
-
-
-aside{
+#outil{
     position: absolute;
     top: 0;
     right: 0;
@@ -205,23 +218,61 @@ aside{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
-
 }
-.has-open{
+/* css d'ouverture des menus déroulants */
+.has-openLeft{
     transform: translateX(+0%);
     transition: transform 0.4s;
 }
-.has-close{
-    transform: translateX(+90%);
+.has-closeLeft{
+    transform: translateX(-90%);
     transition: transform 0.4s;
 }
+
+.has-openRight{
+    transform: translateX(+0%);
+    transition: transform 0.4s;
+}
+.has-closeRight{
+    transform: translateX(90%);
+    transition: transform 0.4s;
+}
+
+/* div du menu déroulant */
+#contentElement{
+    width: 90%;
+    height: 100%;
+    background-color: azure;
+}
+
 #contentTool{
     width: 90%;
     height: 100%;
     background-color: azure;
 }
+
+#contentElement{
+    width: 90%;
+    height: 100%;
+    background-color: azure;
+}
+
+
+/* les boutons d'ouverture et de fermeture */
 #buttonLeft{
+    width: 10%;
+    height: 15%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+
+#buttonRight{
     width: 10%;
     height: 15%;
     background-color: blue;
