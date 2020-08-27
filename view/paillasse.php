@@ -2,7 +2,10 @@
 
 <?php ob_start(); ?>
 
+
     <div class="room">
+
+    <?php require "formElement.php";?>
 
         <aside id="element" class="has-closeLeft">
             <div id="contentElement"></div>
@@ -16,7 +19,7 @@
 
 
         <!-- armoire des éléments -->
-        <a href="#openModal" class="armoire" id="a1"></a>
+        <a href= "#openModal" class="armoire" id="a1"></a>
 
         <!-- hote -->
         <div class="hote"></div>

@@ -132,7 +132,7 @@ function ajax(type, selecteur, lien){
 }
 
 
-// cette function appel mon bout de code.
+//  cette function appel mon bout de code.
 /* Ahmed Warning */
 // je suis en train de réfléchir pour ne pas devoir tout mettre ou reécrire tout ce qu'il y a dans la function ajax.
 // peut être une structure de contrôle pour servir de rooter vers l'appel ou function nécessaire à l'utilisateur
@@ -140,6 +140,26 @@ function ajax(type, selecteur, lien){
 ajax("#", "a1", "href");
 
 
+
+// modal pour choisir les éléments
+
+const openModal = document.querySelector("#a1");
+const modal = document.querySelector("#modal")
+
+// je selection ma grill
+const grid = document.querySelector(".room")
+console.log(grid)
+console.log(openModal)
+console.log(modal)
+
+openModal.addEventListener('click', function(){
+    grid.removeAttribute('.room')
+    modal.removeAttribute('#modal')
+
+    grid.classList.add('flex')
+    modal.setAttribute('id', 'modalVisible')
+
+})
 
 
 

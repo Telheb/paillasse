@@ -148,54 +148,65 @@ p{
     height: 100%;
 }
 
-
-
-
-
-/* mes éléments */
-/* #e1, #e2, #e3, #e4, #e5{ */
-    /* background-color: #000; */
-    /* border: 1px solid #000;
-} */
-
-/* #e1{
-    grid-area: element1;
+/* ModalElement */
+#modal{
+    display: none;
 }
-#e2{
-    grid-area: element2;
-}
-#e3{
-    grid-area: element3;
-}
-#e4{
-    grid-area: element4;
-}
-#e5{
-    grid-area: element5;
-} */
 
+#modalVisible{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../pictures/apprentis_pas_sages_bg);;
+}
 
-/* mes outils */
-/* #o1, #o2, #o3, #o4, #o5{
-    border: 1px solid #000;
-} */
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Formulaire element */
 
-/* #o1{
-    grid-area: tool1;
+#formElement{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    box-sizing: border-box;
 }
-#o2{
-    grid-area: tool2;
+#sectionGauche{
+    height: 90%;
+    width: 50%;
+    background-color: tomato;
+    display: flex;
+    flex-wrap: wrap;
 }
-#o3{
-    grid-area: tool3;
-}
-#o4{
-    grid-area: tool4;
-}
-#o5{
-    grid-area: tool5;
-} */
 
+#sectionDroite{
+    height: 90%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+#submit{
+    width: 20%;
+    height: 5%;
+}
+
+.wrapper-element{
+    width: 20%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* les armoires */
 #element{
