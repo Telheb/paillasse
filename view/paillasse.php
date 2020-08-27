@@ -14,24 +14,9 @@
             <div id="contentTool"></div>
         </aside> -->
 
-        <!-- block elements -->
-        <!-- <div class="element" id="e1"></div>
-        <div class="element" id="e2"></div>
-        <div class="element" id="e3"></div>
-        <div class="element" id="e4"></div>
-        <div class="element" id="e5"></div> -->
-
-
-        <!-- block ouTil -->
-        <!-- <div class="outil" id="o1"></div>
-        <div class="outil" id="o2"></div>
-        <div class="outil" id="o3"></div>
-        <div class="outil" id="o4"></div>
-        <div class="outil" id="o5"></div> -->
-
 
         <!-- armoire des éléments -->
-        <a href="model/req.php?action=a1" class="armoire" id="a1"></a>
+        <a href="#openModal" class="armoire" id="a1"></a>
 
         <!-- hote -->
         <div class="hote"></div>
@@ -61,6 +46,7 @@
         <div class="trash" id="t2"></div>
         <div class="trash" id="t3"></div>
     </div>
+
 
 <?php $content = ob_get_clean(); ?>
 <?php require "template.php"; ?>

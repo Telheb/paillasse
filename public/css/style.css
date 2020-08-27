@@ -148,6 +148,10 @@ p{
     height: 100%;
 }
 
+
+
+
+
 /* mes éléments */
 /* #e1, #e2, #e3, #e4, #e5{ */
     /* background-color: #000; */
@@ -284,6 +288,12 @@ p{
     border: 1px solid #000;
 }
 
+/* le formulaire pour selectionner les éléments */
+#form-elements{
+    width: 30%;
+    height: 30%;
+    background-color: teal;
+}
 
 
 

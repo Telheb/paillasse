@@ -1,5 +1,5 @@
 // function pour ouvrir les menus déroulants.
-function test(action, cible, a){
+function test(action, cible){
 
     const button = document.querySelector(action)
     button.addEventListener('click', function(e){
@@ -33,7 +33,6 @@ function test(action, cible, a){
 }    
 
 test('#buttonLeft', '#element')
-
 
 
 
