@@ -6,8 +6,6 @@ html, body{
     overflow: hidden;
 
 }
-
-
 /* indexView.php */
 nav{
     height: 30%;
@@ -260,19 +258,29 @@ p{
     background-color: azure;
 }
 
-#contentTool{
-    width: 90%;
-    height: 100%;
-    background-color: azure;
+.liElements{
+   width: 100%;
+   height: 25%; 
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
 }
 
-#contentElement{
-    width: 90%;
+
+/* Liste element prochaine à supprimer */
+#listeElement{
+    width: 100%;
     height: 100%;
-    background-color: azure;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
-
-
 /* les boutons d'ouverture et de fermeture */
 #buttonLeft{
     width: 10%;

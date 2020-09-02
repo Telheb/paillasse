@@ -8,15 +8,16 @@
     <?php require "formElement.php";?>
 
         <aside id="element" class="has-closeLeft">
-            <div id="contentElement"></div>
+            <div id="contentElement">
+                <ul id="listeElement">
+                    <li id="" class="liElements">Eau distillée</li>
+                    <li id="" class="liElements">Hydroxyde de sodium</li>
+                    <li id="" class="liElements">Acide Sulfurique</li>
+                    <li id="" class="liElements">Sulfate de cuivre</li>
+                </ul>
+            </div>
             <button id="buttonLeft">clic here to open</button>
         </aside>
-
-        <!-- <aside id="outil" class="has-closeRight">
-        <button id="buttonRight">clic here to open</button>
-            <div id="contentTool"></div>
-        </aside> -->
-
 
         <!-- armoire des éléments -->
         <a href= "#openModal" class="armoire" id="a1"></a>
