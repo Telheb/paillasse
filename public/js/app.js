@@ -23,3 +23,4 @@ function openNclose(button, nameAttribute, typeAttribute, action_1, action_2){
 }
 
 openNclose('#buttonLeft', '#element', 'class', 'has-closeLeft', 'has-openLeft');
+
